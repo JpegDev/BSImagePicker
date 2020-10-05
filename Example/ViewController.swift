@@ -27,7 +27,7 @@ import Photos
 class ViewController: UIViewController {
     
     @IBAction func showImagePicker(_ sender: UIButton) {
-        let imagePicker = ImagePickerController()
+        let imagePicker = BSImagePickerController()
         imagePicker.settings.selection.max = 5
         imagePicker.settings.theme.selectionStyle = .numbered
         imagePicker.settings.fetch.assets.supportedMediaTypes = [.image, .video]
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showCustomImagePicker(_ sender: UIButton) {
-        let imagePicker = ImagePickerController()
+        let imagePicker = BSImagePickerController()
         imagePicker.settings.selection.max = 1
         imagePicker.settings.selection.unselectOnReachingMax = true
         imagePicker.settings.fetch.assets.supportedMediaTypes = [.image, .video]
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
             }
         })
 
-        let imagePicker = ImagePickerController(selectedAssets: evenAssets)
+        let imagePicker = BSImagePickerController(selectedAssets: evenAssets)
         imagePicker.settings.fetch.assets.supportedMediaTypes = [.image]
 
         self.presentImagePicker(imagePicker, select: { (asset) in

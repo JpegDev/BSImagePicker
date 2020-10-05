@@ -23,7 +23,7 @@
 import Foundation
 import Photos
 
-extension ImagePickerController: AssetsViewControllerDelegate {
+extension BSImagePickerController: AssetsViewControllerDelegate {
     func assetsViewController(_ assetsViewController: AssetsViewController, didSelectAsset asset: PHAsset) {
         if settings.selection.unselectOnReachingMax && assetStore.count > settings.selection.max {
             if let first = assetStore.removeFirst() {

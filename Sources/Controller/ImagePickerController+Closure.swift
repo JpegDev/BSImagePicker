@@ -37,7 +37,7 @@ import Photos
     ///   - cancel: Cancel callback
     ///   - finish: Finish callback
     ///   - completion: Presentation completion callback
-    public func presentImagePicker(_ imagePicker: ImagePickerController, animated: Bool = true, select: ((_ asset: PHAsset) -> Void)?, deselect: ((_ asset: PHAsset) -> Void)?, cancel: (([PHAsset]) -> Void)?, finish: (([PHAsset]) -> Void)?, completion: (() -> Void)? = nil) {
+    public func presentImagePicker(_ imagePicker: BSImagePickerController, animated: Bool = true, select: ((_ asset: PHAsset) -> Void)?, deselect: ((_ asset: PHAsset) -> Void)?, cancel: (([PHAsset]) -> Void)?, finish: (([PHAsset]) -> Void)?, completion: (() -> Void)? = nil) {
         authorize {
             // Set closures
             imagePicker.onSelection = select
@@ -65,31 +65,31 @@ import Photos
     }
 }
 
-extension ImagePickerController {
+extension BSImagePickerController {
     public static var currentAuthorization : PHAuthorizationStatus {
         return PHPhotoLibrary.authorizationStatus()
     }
 }
 
 /// ImagePickerControllerDelegate closure wrapper
-extension ImagePickerController: ImagePickerControllerDelegate {
-    public func imagePicker(_ imagePicker: ImagePickerController, didSelectAsset asset: PHAsset) {
+extension BSImagePickerController: ImagePickerControllerDelegate {
+    public func imagePicker(_ imagePicker: BSImagePickerController, didSelectAsset asset: PHAsset) {
         onSelection?(asset)
     }
 
-    public func imagePicker(_ imagePicker: ImagePickerController, didDeselectAsset asset: PHAsset) {
+    public func imagePicker(_ imagePicker: BSImagePickerController, didDeselectAsset asset: PHAsset) {
         onDeselection?(asset)
     }
 
-    public func imagePicker(_ imagePicker: ImagePickerController, didFinishWithAssets assets: [PHAsset]) {
+    public func imagePicker(_ imagePicker: BSImagePickerController, didFinishWithAssets assets: [PHAsset]) {
         onFinish?(assets)
     }
 
-    public func imagePicker(_ imagePicker: ImagePickerController, didCancelWithAssets assets: [PHAsset]) {
+    public func imagePicker(_ imagePicker: BSImagePickerController, didCancelWithAssets assets: [PHAsset]) {
         onCancel?(assets)
     }
 
-    public func imagePicker(_ imagePicker: ImagePickerController, didReachSelectionLimit count: Int) {
+    public func imagePicker(_ imagePicker: BSImagePickerController, didReachSelectionLimit count: Int) {
         
     }
 }

@@ -17,7 +17,7 @@
 		5540480A232EB21D00BC846F /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55404809232EB21D00BC846F /* CameraPreviewView.swift */; };
 		5543942D232A4EB500DB51B7 /* LivePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543942C232A4EB500DB51B7 /* LivePreviewViewController.swift */; };
 		5554729821E4E01700B90CA5 /* AssetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554729721E4E01700B90CA5 /* AssetStore.swift */; };
-		5554729D21E5248400B90CA5 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554729C21E5248400B90CA5 /* ImagePickerController.swift */; };
+		5554729D21E5248400B90CA5 /* BSImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554729C21E5248400B90CA5 /* BSImagePickerController.swift */; };
 		555472AE21E538B000B90CA5 /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555472AD21E538B000B90CA5 /* AssetsViewController.swift */; };
 		5569D00721D52A6D00D03631 /* BSImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550A315121D5298400AAF718 /* BSImagePicker.framework */; };
 		55888E4B2231A31C003C861D /* VideoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55888E4A2231A31C003C861D /* VideoPreviewViewController.swift */; };
@@ -90,7 +90,7 @@
 		55404809232EB21D00BC846F /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		5543942C232A4EB500DB51B7 /* LivePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePreviewViewController.swift; sourceTree = "<group>"; };
 		5554729721E4E01700B90CA5 /* AssetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetStore.swift; sourceTree = "<group>"; };
-		5554729C21E5248400B90CA5 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		5554729C21E5248400B90CA5 /* BSImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSImagePickerController.swift; sourceTree = "<group>"; };
 		555472AD21E538B000B90CA5 /* AssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
 		5569D00221D52A6D00D03631 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5569D00621D52A6D00D03631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 		559DB81D21E78E5500CD58B4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5554729C21E5248400B90CA5 /* ImagePickerController.swift */,
+				5554729C21E5248400B90CA5 /* BSImagePickerController.swift */,
 				559DB81021E6561300CD58B4 /* ImagePickerController+Closure.swift */,
 				559DB81621E6AFD800CD58B4 /* ImagePickerController+Assets.swift */,
 				559DB81821E6AFF300CD58B4 /* ImagePickerController+Albums.swift */,
@@ -469,7 +469,7 @@
 				5554729821E4E01700B90CA5 /* AssetStore.swift in Sources */,
 				559DB82121E7902400CD58B4 /* CameraViewController.swift in Sources */,
 				94DA6870247BDE5900CD5251 /* UIColor+BSImagePicker.swift in Sources */,
-				5554729D21E5248400B90CA5 /* ImagePickerController.swift in Sources */,
+				5554729D21E5248400B90CA5 /* BSImagePickerController.swift in Sources */,
 				55C5B800222BD445003CF3F1 /* DropdownTransitionDelegate.swift in Sources */,
 				55BCF8D321D52C1000386752 /* AssetsCollectionViewDataSource.swift in Sources */,
 				550CB427230FD08200543217 /* ImageViewLayout.swift in Sources */,
