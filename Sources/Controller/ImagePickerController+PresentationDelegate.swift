@@ -22,7 +22,7 @@
 
 import UIKit
 
-extension ImagePickerController: UIAdaptivePresentationControllerDelegate {
+extension BSImagePickerController: UIAdaptivePresentationControllerDelegate {
 
     @available(iOS 13, *)
     public func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {

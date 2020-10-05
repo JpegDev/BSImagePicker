@@ -23,7 +23,7 @@
 import Foundation
 import Photos
 
-extension ImagePickerController: AlbumsViewControllerDelegate {
+extension BSImagePickerController: AlbumsViewControllerDelegate {
     func didDismissAlbumsViewController(_ albumsViewController: AlbumsViewController) {
         rotateButtonArrow()
     }

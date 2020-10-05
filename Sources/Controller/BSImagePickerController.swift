@@ -24,7 +24,7 @@ import UIKit
 import Photos
 
 // MARK: ImagePickerController
-@objcMembers open class ImagePickerController: UINavigationController {
+@objcMembers open class BSImagePickerController: UINavigationController {
     // MARK: Public properties
     public weak var imagePickerDelegate: ImagePickerControllerDelegate?
     public var settings: Settings = Settings()
@@ -120,7 +120,7 @@ import Photos
 
         albumButton.setImage(image, for: .normal)
         albumButton.semanticContentAttribute = .forceRightToLeft // To set image to the right without having to calculate insets/constraints.
-        albumButton.addTarget(self, action: #selector(ImagePickerController.albumsButtonPressed(_:)), for: .touchUpInside)
+        albumButton.addTarget(self, action: #selector(BSImagePickerController.albumsButtonPressed(_:)), for: .touchUpInside)
         firstViewController?.navigationItem.titleView = albumButton
 
         doneButton.target = self
